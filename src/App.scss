@@ -14,29 +14,3 @@ ul li {
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px; */
 }
-
-.header {
-  grid-area: a;
-  background-color: rgba(24, 180, 133, 0.2);
-
-  img {
-    width: 50px;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-}
-
-.nav {
-  grid-area: b;
-  background-color: yellow;
-}
-
-.content {
-  background-color: red;
-  grid-area: c;
-
-  img {
-    width: 700px;
-  }
-}

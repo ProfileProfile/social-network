@@ -1,8 +1,10 @@
 import React from "react";
 
+import s from "./Navigation.module.scss";
+
 export const Navigation = () => {
   return (
-    <nav className="nav">
+    <nav className={s.nav}>
       <div>Profile</div>
       <div>Messages</div>
       <div>News</div>
