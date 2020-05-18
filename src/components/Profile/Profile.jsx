@@ -13,7 +13,8 @@ export const Profile = () => {
       <div>ava + description</div>
       <div>
         <CreatePost />
-        <Posts />
+        <Posts text="it`s my first comment!" />
+        <Posts text="Fk off dude!" />
       </div>
       Main content
     </div>

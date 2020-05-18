@@ -5,8 +5,12 @@ import s from "./Navigation.module.scss";
 export const Navigation = () => {
   return (
     <nav className={s.nav}>
-      <div>Profile</div>
-      <div>Messages</div>
+      <div>
+        <a href="/profile">Profile</a>
+      </div>
+      <div>
+        <a href="/dialogs">Messages</a>
+      </div>
       <div>News</div>
       <div>
         <a href="#q">Music</a>

@@ -1,7 +1,9 @@
 import React from "react";
 import s from "./Posts.module.scss";
 
-export const Posts = () => {
+export const Posts = (props) => {
+  const { text } = props;
+
   return (
     <div className={s.cont}>
       <img
@@ -9,7 +11,7 @@ export const Posts = () => {
         alt="profile pic"
         className={s.avatar}
       />
-      Posts 1
+      {text}
     </div>
   );
 };
