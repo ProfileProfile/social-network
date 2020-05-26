@@ -1,4 +1,14 @@
 .nav {
   grid-area: b;
-  background-color: yellow;
+  background-color: rgb(14, 112, 27);
+}
+
+.link {
+  a {
+    color: #fff;
+  }
+
+  .activeLink {
+    color: rgb(214, 41, 41);
+  }
 }

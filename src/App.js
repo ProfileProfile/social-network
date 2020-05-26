@@ -1,9 +1,13 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+
 import { Header } from "./components/Header";
 import { Navigation } from "./components/Navigation";
-import { Profile } from "./components/Profile";
+import { ProfilePage } from "./components/ProfilePage";
 import { Dialogs } from "./components/Dialogs";
-import { BrowserRouter, Route } from "react-router-dom";
+import { Music } from "./components/Music";
+import { Settings } from "./components/Settings";
+import { News } from "./components/News";
 
 import "./App.scss";
 
@@ -14,8 +18,11 @@ const App = () => {
         <Header />
         <Navigation />
         <div className="content">
-          <Route path="/profile" component={Profile} />
+          <Route path="/profile" component={ProfilePage} />
           <Route path="/dialogs" component={Dialogs} />
+          <Route path="/music" component={Music} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/news" component={News} />
         </div>
       </div>
     </BrowserRouter>

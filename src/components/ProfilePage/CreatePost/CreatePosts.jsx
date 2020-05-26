@@ -7,8 +7,10 @@ export const CreatePost = () => {
       <div>new posts</div>
       <div>
         <input type="textarea" />
-        <button>Добавить</button>
-        <button>Удалить</button>
+        <div>
+          <button>Добавить</button>
+          <button>Удалить</button>
+        </div>
       </div>
     </div>
   );
