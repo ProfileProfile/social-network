@@ -6,6 +6,11 @@ import { Profile } from "./Profile";
 import s from "./Profile.module.scss";
 
 export const ProfilePage = () => {
+  const textPosts = [
+    { id: 1, text: "it`s my first comment!" },
+    { id: 2, text: "Fk off dude!" },
+  ];
+
   return (
     <div>
       <div>
