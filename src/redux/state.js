@@ -19,4 +19,11 @@ export const state = {
       { id: 2, text: "Fk off dude!" },
     ],
   },
+  navigationBlock: {
+    sideblockFriends: [
+      { id: 3, name: "Илья", surname: "Гусельников" },
+      { id: 1, name: "Михаил", surname: "Белослудцев" },
+      { id: 52, name: "Глеб", surname: "Межин" },
+    ],
+  },
 };
