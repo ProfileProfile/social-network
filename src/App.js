@@ -11,15 +11,28 @@ import { News } from "./components/News";
 
 import "./App.scss";
 
-const App = () => {
+const App = (props) => {
+  const { state } = props;
+  console.log("state2: ", state);
   return (
     <BrowserRouter>
       <div className="container">
         <Header />
         <Navigation />
         <div className="content">
-          <Route path="/profile" component={ProfilePage} />
-          <Route path="/dialogs" component={Dialogs} />
+          <Route
+            path="/profile"
+            render={() => <ProfilePage posts={state.profilePage} />}
+          />
+          <Route
+            path="/dialogs"
+            component={() => (
+              <Dialogs
+                interlocutor={state.dialogsPage}
+                messages={state.dialogsPage}
+              />
+            )}
+          />
           <Route path="/music" component={Music} />
           <Route path="/settings" component={Settings} />
           <Route path="/news" component={News} />
