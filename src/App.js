@@ -18,7 +18,7 @@ const App = (props) => {
     <BrowserRouter>
       <div className="container">
         <Header />
-        <Navigation />
+        <Navigation state={state.navigationBlock} />
         <div className="content">
           <Route
             path="/profile"

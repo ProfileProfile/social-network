@@ -1,3 +1,7 @@
+import { Gleb } from "assets/avatars/Gleb";
+import { Michael } from "assets/avatars/Michael";
+import { Ilya } from "assets/avatars/Ilya";
+
 export const state = {
   dialogsPage: {
     interlocutor: [
@@ -21,9 +25,9 @@ export const state = {
   },
   navigationBlock: {
     sideblockFriends: [
-      { id: 3, name: "Илья", surname: "Гусельников" },
-      { id: 1, name: "Михаил", surname: "Белослудцев" },
-      { id: 52, name: "Глеб", surname: "Межин" },
+      { id: 3, name: "Илья", surname: "Гусельников", avatar: Ilya },
+      { id: 1, name: "Михаил", surname: "Белослудцев", avatar: Michael },
+      { id: 52, name: "Глеб", surname: "Межин", avatar: Gleb },
     ],
   },
 };

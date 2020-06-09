@@ -1,9 +1,11 @@
 import React from "react";
+import { Friends } from "./Sidebar/Friends";
 import { NavLink } from "react-router-dom";
 
 import s from "./Navigation.module.scss";
 
-export const Navigation = () => {
+export const Navigation = (props) => {
+  const { state } = props;
   return (
     <nav className={s.nav}>
       <div className={s.link}>
@@ -31,6 +33,7 @@ export const Navigation = () => {
           Settings
         </NavLink>
       </div>
+      <Friends person={state} />
     </nav>
   );
 };
